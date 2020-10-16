@@ -1,0 +1,321 @@
+* {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+body {
+    display: flex;
+    margin: 0;
+}
+/* menu */
+.menu {
+    float: left;
+    height: 100vh;
+    width: 350px;
+}
+.primary {
+    float: left;
+    height: 100%;
+    width: 100px;
+    background-color: #1d2531;
+}
+.bottom {
+    position: fixed;
+    bottom: 0;
+    padding-bottom: 15px;
+}
+.bottom :nth-child(1) {
+    margin-right: 10px;
+    margin-left: 29px;
+}
+.item {
+    padding-top: 20px;
+}
+.item > div {
+    margin: 20px auto;
+    padding-top: 15px;
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    text-align: center;
+}
+.item > div img {
+    width: 30px;
+    height: 30px;
+}
+.item > :nth-child(1) {
+    background-color: #2399f1;
+}
+.item > :nth-child(2) {
+    background-color: #8b70e5;
+}
+.item > :nth-child(3) {
+    background-color: #df3e21;
+}
+.item > :nth-child(4) {
+    border: 3px solid #696969;
+}
+.secondary {
+    float: left;
+    height: 100%;
+    width: 250px;
+    background-color: #222c3c;
+}
+.capacity {
+    position: fixed;
+    bottom: 0;
+    width: 250px;
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+}
+.capacity :nth-child(1){
+    margin-right: 10px;
+}
+.road {
+    margin: 15px auto;
+    height: 4px;
+    width: 190px;
+    border-radius: 2px;
+    background-color: rgba(45, 56, 72, 1);
+}
+.road > div {
+    height: 4px;
+    width: 40px;
+    border-radius: 2px;
+    background-color: rgba(142, 117, 229, 1);
+}
+.part {
+    position: relative;
+    font-size: 14px;
+    color: #b7c0cd;
+}
+.part::after {
+    content: url(../image/Divider.png);
+    margin-left: 30px;
+}
+ul {
+    list-style-type: none;
+}
+li {
+    margin-bottom: 10px;
+}
+li > span {
+    font-size: 12px;
+    color: #5b6779;
+}
+.part > img {
+    position: absolute;
+    top: 0;
+    right: 30px;
+}
+.part > :nth-child(3) {
+    position: absolute;
+    top: 58px;
+    right: 30px;
+    width: 32px;
+    height: 24px;
+    border-radius: 11px;
+    line-height: 24px;
+    text-align: center;
+    background-color: #2399f2;
+}
+.part-2 li::before{
+    margin-right: 10px;
+}
+.part-2 > ul :nth-child(2)::before {
+    content: url(../image/Book_of_Wisdom.png);
+}
+.part-2 > ul :nth-child(3)::before {
+    content: url(../image/Video_Camera.png);
+}
+.part-2 > ul :nth-child(4)::before {
+    content: url(../image/Painting.png);
+}
+.part-2 > ul :nth-child(5)::before {
+    content: url(../image/Chart.png);
+}
+.part-3 > :nth-child(3) {
+    top: 28px;
+}
+.alert {
+    position: absolute;
+    right: 30px;
+    top: 88px;
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    text-align: center;
+    background-color: #e24024;
+}
+
+/* right */
+.chat {
+    /* display: flex; */
+    flex: 1;
+}
+header {
+    position: relative;
+    height: 80px;
+    background-color: #eff3f6;
+}
+.user {
+    position: fixed;
+    right: 0;
+    width: 240px;
+    height: 80px;
+    color: #2399f1;
+}
+.user span {
+    font-size: 14px;
+    color: #b5b5b5;
+}
+.user > img[alt="Photo"] {
+    float: left;
+    margin: 15px 10px;
+}
+img[alt="dropdown"] {
+    position: absolute;
+    right: 30px;
+    top: 36px;
+}
+h2 {
+    float: left;
+    margin-left: 20px;
+    font-weight: 400;
+}
+aside {
+    float: left;
+    width: 400px;
+    height: 741px;
+    border-right: 1px solid #f7f8f9;
+    overflow: hidden;
+}
+.search {
+    padding-top: 17px;
+    height: 70px;
+    border-bottom: 1px solid #f6f7f9;
+    border-right: 1px solid #f6f7f9;
+    text-align: center;
+}
+.contacts {
+    position: relative;
+    padding-left: 30px;
+    padding-top: 15px;
+    height: 130px;
+    border-bottom: 1px solid #f7f8f9;
+    font-size: 14px;
+    color: #585d68;
+}
+.contacts img {
+    float: left;
+    margin-right: 20px;
+}
+h4 {
+    margin: 0;
+    font-size: 16px;
+}
+.app {
+    color: #b5b5b5;
+}
+.time {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+}
+.contacts-1 h4 {
+    color: #2399f1;
+}
+.contacts-1 p::after {
+    content: url(../image/Notification.png);
+    position: absolute;
+    right: 20px;
+    bottom: 30px;
+}
+.contacts-1 h4::before {
+    content: url(../image/Status.png);
+    margin-right: 5px;
+}
+main {
+    margin-left: 400px;
+    height: 741px;
+}
+.func {
+    position: relative;
+    padding-left: 30px;
+    width: 100%;
+    height: 70px;
+    border-bottom: 1px solid #f6f7f9;
+    line-height: 70px;
+}
+h3 {
+    display: inline-block;
+    margin: 0;
+    font-size: 18px;
+}
+h3::after {
+    content: url(../image/Status_G.png);
+    margin-left: 10px;
+}
+.func img {
+    position: absolute;
+    right: 20px;
+    top: 19px;
+}
+.func :nth-child(2) {
+    right: 200px;
+}
+.message {
+    padding-left: 30px;
+    padding-top: 15px;
+}
+.message h4 {
+    float: left;
+    margin-right: 10px;
+}
+.message :nth-child(1) {
+    float: left;
+    margin-right: 20px;
+}
+.message p,
+.message span {
+    font-size: 14px;
+}
+.message p {
+    margin-left: 65px;
+}
+main > img {
+    width: 100%;
+}
+.message :nth-child(5) {
+    margin-left: 65px;
+    margin-right: 10px;
+}
+.write {
+    display: flex;
+    margin: 0 auto;
+    height: 54px;
+    width: 80%;
+    border: 1px solid #585d68;
+    border-radius: 5px;
+}
+.write button,
+.write input {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    border: 0;
+}
+.write button {
+    float: left;
+    width: 54px;
+    text-align: center;
+    line-height: 54px;
+    background: url(../image/Add.png) no-repeat 50%;
+}
+.write input {
+    flex: 1;
+}
+.write input:focus {
+    outline: none;
+}
